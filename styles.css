@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  width: 400px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.popup {
+  padding: 1rem 2rem;
+  background-color: rgb(34, 30, 30);
+  color: white;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  margin: 1rem 0;
+  color: rgb(85, 83, 83);
+  padding: 2.5rem 2rem 2rem 2rem;
+  font-size: large;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.card::before {
+  border-top: 20px solid rgb(223, 90, 38);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  content: '';
+}
+
+.card__title {
+  margin-bottom: 2rem;
+}
+.card__title span{
+  color: rgb(223, 90, 38);
+  font-weight: 700;
+}
+.card__detail {
+  margin-bottom: 2rem;
+  line-height: 30px;
+}
+.card__detail span {
+  font-weight: 800;
+}
+
+.card__actions {
+  margin-bottom: 2rem;
+}
+.card__actions input{
+  padding: 1rem;
+  margin-right: 0.5rem;
+}
+.card__actions input::placeholder {
+  font-size: large;
+}
+.card__actions button{
+  padding: 0.8rem;
+  background-color: rgb(17, 196, 17);
+  color: white;
+  border-radius: 4px;
+  border: 1px solid rgb(17, 196, 17);
+  font-size: large;
+  cursor: pointer;
+}
+.card__link {
+  color: rgb(26, 175, 212);
+  font-style: italic;
+  cursor: pointer;
+}
+.bottom__btns {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.bottom__btns button{
+  cursor: pointer;
+  padding: 0.8rem 2rem;
+  font-weight: 700;
+  font-size: medium;
+  background-color: whitesmoke;
+  color: rgb(85, 83, 83);
+  border-radius: 4px;
+  border: 1px solid rgb(250, 245, 245);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
